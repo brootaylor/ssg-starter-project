@@ -1,1 +1,1 @@
-# ssg-starter-project
+# SSG starter project

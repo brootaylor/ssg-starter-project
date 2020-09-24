@@ -1,0 +1,25 @@
+{
+  "name": "ssg-starter-project",
+  "version": "1.0.0",
+  "description": "Starter for SSG projects.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brootaylor/ssg-starter-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brootaylor/ssg-starter-project/issues"
+  },
+  "homepage": "https://github.com/brootaylor/ssg-starter-project#readme",
+  "keywords": [
+    "ssg",
+    "starter-project",
+    "gulp",
+    "netlify",
+    "eleventy"
+  ],
+  "author": "Bruce Taylor",
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
