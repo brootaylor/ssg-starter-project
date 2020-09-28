@@ -18,7 +18,7 @@ const images = () => {
         }
       )
     )
-    .pipe(dest('./dist/images'));
+    .pipe(dest('./dist/assets/images'));
 };
 
 module.exports = images;
