@@ -1,6 +1,8 @@
 const { dest, src } = require('gulp');
-const cleanCSS = require('gulp-clean-css');
 const sassProcessor = require('gulp-sass');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const cleanCSS = require('gulp-clean-css');
 
 // We want to be using canonical Sass, rather than node-sass
 sassProcessor.compiler = require('sass');
@@ -54,6 +56,7 @@ const criticalCss = () => {
 const sass = () => {
   return src('./src/styles/*.scss')
     .pipe(sassProcessor().on('error', sassProcessor.logError))
+    .pipe(postcss([autoprefixer()]))
     .pipe(
       cleanCSS(
         isProduction

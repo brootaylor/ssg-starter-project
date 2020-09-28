@@ -1,3 +1,7 @@
 @import 'config';
 
 @import 'reset';
+
+body {
+    display: flex;
+}
